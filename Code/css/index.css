@@ -1,0 +1,152 @@
+﻿html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+img {
+    position: absolute;
+}
+
+#background-2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#button-1 {
+    right: 5%;
+    top: 10%;
+    width: 30%;
+}
+
+#button-2 {
+    right: 5%;
+    top: 18%;
+    width: 30%;
+}
+
+#button-3 {
+    left: 5%;
+    bottom: 7%;
+    width: 90%;
+}
+
+#modal-1 {
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+}
+
+#modal-1-close {
+    top: 35%;
+    right: 10%;
+    width: 10%;
+}
+
+#modal-2 {
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+}
+
+#modal-2-close {
+    top: 25%;
+    right: 10%;
+    width: 10%;
+}
+
+#modal-3 {
+    left: 2%;
+    background-image: url('../img/modal-3.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 96%;
+    height: 450px;
+    bottom: 5%;
+}
+
+#modal-3-close {
+    top: 10%;
+    right: 10%;
+    width: 10%;
+}
+
+#submit {
+    width: 30%;
+    bottom: 5%;
+    right: 15%;
+}
+
+input {
+    position: absolute;
+    border: none;
+    background: none;
+}
+
+#name {
+    left: 25%;
+    top: 25%;
+    width: 28%;
+    height: 4%;
+}
+
+#age {
+    left: 25%;
+    top: 45%;
+    width: 28%;
+    height: 4%;
+}
+
+#phone {
+    left: 25%;
+    top: 55%;
+    width: 28%;
+    height: 4%;
+}
+
+#school {
+    left: 25%;
+    top: 65%;
+    width: 28%;
+    height: 4%;
+}
+
+#goodat {
+    left: 32%;
+    top: 76%;
+    width: 50%;
+    height: 4%;
+}
+
+#sex-male {
+    left: 24%;
+    top: 35%;
+    width: 18px;
+    height: 18px;
+}
+
+#sex-female {
+    left: 39%;
+    top: 35%;
+    width: 18px;
+    height: 18px;
+}
+
+#upload-area {
+    position: absolute;
+    left: 61%;
+    top: 28%;
+    background-color: none;
+    width: 30%;
+    height: 33%;
+}
