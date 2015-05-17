@@ -44,7 +44,7 @@
         var file = $("#upload-input").get(0).files[0];
         $.ajax({
             type: "POST",
-            url: "",
+            url: "http://www.xxx.com/xxxxxx?name=" + name + "&age=" + age + "&sex=" + sex + "&phone=" + phone + "&school=" + school + "&goodat=" + goodat,
             contentType: "application/octet-stream",
             processData: false,
             data: file,
