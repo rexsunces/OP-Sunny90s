@@ -44,16 +44,34 @@
         var file = $("#upload-input").get(0).files[0];
         $.ajax({
             type: "POST",
-            url: "http://www.xxx.com/xxxxxx?name=" + name + "&age=" + age + "&sex=" + sex + "&phone=" + phone + "&school=" + school + "&goodat=" + goodat,
+            url:("/index.php?r=sun90/create&name=" + name + "&age=" + age + "&sex=" + sex + "&phone=" + phone + "&school=" + school + "&goodat=" + goodat),
             contentType: "application/octet-stream",
             processData: false,
             data: file,
-            success: function (n) {
-                alert("上传成功！");
+            success: function (data) {
+                if(data.success==true){
+				alert("提交成功");
+					//$('#submit').attr("src","\\"+data.data.photo);
+				}
+				else{
+				alert("提交失败！");
+				}
             },
             error: function () {
-                alert("上传失败！");
+                alert("提交失败！");
             }
         })
     });
+	$('#upload-input').change(function(e){
+        var file = e.target.files[0];
+        var reader = new FileReader();  
+        reader.onload = function(e){
+			var m="<img src='"+e.target.result+"' style='height:100%;width:100%'/>";
+			$("#upload-area").empty();
+			$(m).appendTo($("#upload-area"));		      
+        }
+        reader.readAsDataURL(file);
+	});
 });
+
+
